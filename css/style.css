@@ -1,0 +1,22 @@
+.wrapper {
+    margin: auto;
+    width: 90vw;
+    min-height: 100vh;
+}
+
+.titulo {
+    color: blue;
+}
+
+.card {
+    width: 30%;
+    display: inline-block;
+}
+
+.card-img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
