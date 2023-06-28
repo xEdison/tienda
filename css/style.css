@@ -1,27 +1,118 @@
-.wrapper {
-    margin: auto;
-    width: 90vw;
-    min-height: 100vh;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
-.titulo {
-    color: blue;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-    width: 30%;
+.product {
     display: inline-block;
-}
-
-.card-img {
-    height: 400px;
-    border: 5px solid rgb(58, 154, 82);
-    margin: 20px;
-}
-
-h1 {
     text-align: center;
-    background-color: rgb(58, 154, 82);
-    color: rgb(255, 0, 0);
-    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#carrito {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#carrito h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#carrito-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carrito-lista li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+#carrito-lista li:last-child {
+    border-bottom: none;
+}
+
+#carrito-lista li .producto {
+    display: flex;
+    align-items: center;
+}
+
+#carrito-lista li .producto img {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#carrito-lista li .producto .titulo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#carrito-total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+#carrito-total span {
+    color: #4CAF50;
 }

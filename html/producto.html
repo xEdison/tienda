@@ -12,13 +12,59 @@
     <div class="wrapper">
         <h1 class="titulo">Producto</h1>
 
-        <div class="card"><img src="../source/agua.png" alt="" class="card-img"></div>
-        <div class="card"><img src="../source/coca.png" alt="" class="card-img"></div>
-        <div class="card"><img src="../source/red bull.png" alt="" class="card-img"></div>
-        <div class="card"><img src="../source/vive.png" alt="" class="card-img"></div>
-        <div class="card"><img src="../source/speed.png" alt="" class="card-img"></div>
-        <div class="card"><img src="../source/gatorade.png" alt="" class="card-img"></div>
+
+        <div class="product">
+            <img src="../source/agua.png" alt="Producto 1" class="card-img">
+            <h3>Producto 1</h3>
+            <p>Precio: $10</p>
+            <button onclick="agregarAlCarrito('Producto 1', 10)">Agregar al carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="../source/coca.png" alt="Producto 2" class="card-img">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+            <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="../source/gatorade.png" alt="Producto 2" class="card-img">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+            <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="../source/red bull.png" alt="Producto 2" class="card-img">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+            <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="../source/speed.png" alt="Producto 2" class="card-img">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+            <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="../source/vive.png" alt="Producto 2" class="card-img">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+            <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="../source/cerve.jfif" alt="Producto 2" class="card-img">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+            <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+        </div>
+
+        <div id="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="carrito-lista"></ul>
+            <p id="carrito-total">Total: $0</p>
+        </div>
+
     </div>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>
